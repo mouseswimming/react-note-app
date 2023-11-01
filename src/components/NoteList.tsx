@@ -91,7 +91,7 @@ export default function NoteList({
           </Col>
         </Row>
       </Form>
-      <Row xs={1} md={2} lg={3} xl={4} className="g-3">
+      <Row sm={1} lg={2} xl={3} className="g-3">
         {filteredNotes.map((note) => (
           <NoteCard
             key={note.id}
@@ -100,7 +100,6 @@ export default function NoteList({
             tags={note.tags}
             markdown={note.markdown}
           />
-          // <div>{note.title}</div>
         ))}
       </Row>
       <TagEditModal

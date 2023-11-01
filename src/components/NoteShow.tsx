@@ -54,13 +54,7 @@ export default function NoteShow({ onDeleteNote }: NoteShowProps) {
           </Stack>
         </Col>
       </Row>
-      {/* <Row className="mb-3">
-        <Stack direction="vertical">
-          <h1 className="text-capitalize">{note.title}</h1>
-          <TagGroups tags={note.tags} alignLeft={true} />
-        </Stack>
-      </Row> */}
-      <ReactMarkdown className="border p-4 rounded-2">
+      <ReactMarkdown className="border p-4 rounded-2 bg-white shadow-sm">
         {note.markdown}
       </ReactMarkdown>
     </>

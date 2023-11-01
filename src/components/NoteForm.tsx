@@ -88,9 +88,9 @@ export default function NoteForm({
             <Form.Control
               required
               as="textarea"
-              rows={15}
               ref={markdownRef}
               defaultValue={markdown}
+              style={{ minHeight: "50vh" }}
             />
           </Form.Group>
         </Row>

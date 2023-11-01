@@ -77,14 +77,7 @@ function App() {
   }
 
   return (
-    <Container
-      style={{
-        backgroundImage: "url('/note.svg')",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center bottom -100px",
-      }}
-      className="min-vh-100"
-    >
+    <Container className="min-vh-100">
       <Routes>
         <Route
           path="/"
