@@ -17,8 +17,6 @@ function App() {
   const [notes, setNotes] = useLocalStorage<RawNote[]>("NOTES", data.notes);
   const [tags, setTags] = useLocalStorage<Tag[]>("TAGS", data.tags);
 
-  console.log(data);
-
   const notesWithTags = useMemo(() => {
     return notes?.map((note) => {
       return {
@@ -79,7 +77,14 @@ function App() {
   }
 
   return (
-    <Container>
+    <Container
+      style={{
+        backgroundImage: "url('/note.svg')",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center bottom -100px",
+      }}
+      className="min-vh-100"
+    >
       <Routes>
         <Route
           path="/"
