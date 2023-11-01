@@ -1,3 +1,4 @@
+import { Row } from "react-bootstrap";
 import { NoteData, Tag } from "../types";
 import { useNote } from "../utils/useNote";
 import NoteForm from "./NoteForm";
@@ -16,7 +17,10 @@ export default function EditNote({
   const note = useNote();
   return (
     <>
-      <h1 className="mb-4">Edit Note</h1>
+      <Row className="mb-4 align-items-center py-2 px-1 bg-dark bg-gradient text-white rounded-bottom">
+        <h1>Edit Note</h1>
+      </Row>
+
       <NoteForm
         onSubmit={(data) => onSubmit(note.id, data)}
         onAddTag={onAddTag}

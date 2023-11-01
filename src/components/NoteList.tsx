@@ -38,14 +38,14 @@ export default function NoteList({
 
   return (
     <>
-      <Row className="mb-4 align-items-center py-2 bg-dark bg-gradient text-white rounded-bottom">
+      <Row className="mb-4 align-items-center py-2 px-1 bg-dark bg-gradient text-white rounded-bottom">
         <Col>
           <h1>Notes</h1>
         </Col>
         <Col xs="auto">
           <Stack direction="horizontal" gap={2}>
             <Link to="/new">
-              <Button variant="primary">Create</Button>
+              <Button variant="primary">Create Note</Button>
             </Link>
             <Button onClick={() => setModalShow(true)} variant="light">
               Manage Tags

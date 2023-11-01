@@ -11,9 +11,13 @@ import NoteLayout from "./components/NoteLayout";
 import NoteShow from "./components/NoteShow";
 import NoteEdit from "./components/NoteEdit";
 
+import data from "./data/demo.json";
+
 function App() {
-  const [notes, setNotes] = useLocalStorage<RawNote[]>("NOTES", []);
-  const [tags, setTags] = useLocalStorage<Tag[]>("TAGS", []);
+  const [notes, setNotes] = useLocalStorage<RawNote[]>("NOTES", data.notes);
+  const [tags, setTags] = useLocalStorage<Tag[]>("TAGS", data.tags);
+
+  console.log(data);
 
   const notesWithTags = useMemo(() => {
     return notes?.map((note) => {

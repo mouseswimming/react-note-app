@@ -15,7 +15,7 @@ export default function NoteShow({ onDeleteNote }: NoteShowProps) {
 
   return (
     <>
-      <Row className="mb-4 align-items-center py-2 bg-dark bg-gradient text-white rounded-bottom">
+      <Row className="mb-4 align-items-center py-2 px-1 bg-dark bg-gradient text-white rounded-bottom">
         <Col>
           <h1 className="text-capitalize">{note.title}</h1>
         </Col>
