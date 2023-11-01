@@ -1,0 +1,17 @@
+.card {
+  transition: translate 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover,
+.card:focus {
+  translate: 0 -5px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.preview {
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
